@@ -14,12 +14,13 @@ import lombok.*;
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "U_id_Student")
     private int id;
 
-    @Column(name = "U_StudentName")
+    @Column(name = "U_Studentname")
     private String name;
 
-    @Column(name = "U_StudentSurname")
+    @Column(name = "U_Studentsurname")
     private String surname;
 
     // Constructors, getters, and setters
